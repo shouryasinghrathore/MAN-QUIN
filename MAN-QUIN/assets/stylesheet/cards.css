@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #c99789;
+  }
+
+
+  ::-moz-selection { /* Code for Firefox */
+    background: #fad9c1;
+  }
+  
+  ::selection {
+    background: #fad9c1;
+  }
+
+  
+/* Navbar */
+.navbar-nav li {
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    margin: 0 10px;
+  }  
+  
+
+  #HeadOverlay{
+      background: rgba(0, 0, 0, 0.678);
+  }
+
+  /*heading section start-*/
+
+.container1{
+    position: relative;
+    height:50vh;
+    width:100%;
+    
+}
+.container2{
+    position: relative;
+    height:50vh;
+    width:100%;
+    
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.container1::before{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url("aboutheading.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container2::before{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../images/aboutheading.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*cards*/
+.cards{
+    height:50%;
+    width:50%;
+   
+}
+.cards p{
+    list-style: none;
+    margin:0rem;
+    padding:0.8rem 1rem;
+    text-transform: capitalize;
+   
+}
+.cards p:hover{
+    background-color: black;
+    color:white;
+}
+.cards{
+    margin:0rem 1rem;
+}
+.active1{
+    background-color: black;
+    color:white;
+    margin:0;
+    padding:0rem  0.2rem;
+}
+
+.card1{
+   position: relative;
+    margin:1.5rem 0rem;
+    overflow: hidden;
+   box-shadow: 0px 3px 10px rgba(0 0 0 / 0.2);
+    height:auto;
+
+    border-radius: 5px;
+}
+
+.card1 img{
+    width:100%;
+    height:100%;
+}
+.overlay{
+    position: absolute;
+    bottom:0;
+    left:0;
+    border-radius:0;
+    text-align: center;
+    
+    transition: all 0.7s ease;
+    background-color:black;
+    width:100%;
+    color: white;
+    height:100%;
+     opacity: 0;
+     transition: all 0.3s ease ;
+}
+.overlay p{
+    
+  top:50%;
+    position: relative;
+   text-transform: capitalize;
+}
+.card1:hover .overlay{
+    opacity: 0.8;
+}
+.card-section{
+    position: relative;
+    display: flex;
+
+}
+
+
+@media only screen and (max-width:1080px)
+{
+  
+}
+
+@media only screen and (max-width:768px)
+{
+.container1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-section{
+    flex-direction: column;
+}
+.cards{
+    width: 100% !important;;
+    margin: auto;
+    padding:0rem;
+}
+.row{
+    width: 100% !important;
+}
+}
+@media only screen and (max-width:555px){
+ .container1,
+ .container2{
+     height: 75vh !important;
+ }
+}
+  
+@media (max-width:767px) { 
+    .ki{
+    padding-left: 0px;
+  }
+       }

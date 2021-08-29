@@ -1,0 +1,147 @@
+hr {
+  opacity :100%;
+  color: var(--primary);
+  height: 2px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+  color:black
+}
+
+::-moz-selection {
+  background: #dbe2ef;
+}
+
+::selection {
+  background: #dbe2ef;
+}
+
+
+.heading{
+  background: url(https://images.unsplash.com/photo-1547355892-357e7122bfe2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) no-repeat center / cover;
+  color: white;
+  margin-top: 0;
+}
+
+.headOverlay{
+  background:rgba(0, 0, 0, 0.507);
+}
+
+.py-4 h3{
+  font-size: 3.5rem;
+  font-weight: 550;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.container-blog {
+  width: 95%;
+  max-width: 1500px;
+  position: relative;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  width: 55%;
+  height: 440px;
+  position: absolute;
+  background: url("../images/blog.jpg")
+    no-repeat center / cover;
+  border-radius: 8px;
+}
+.right {
+  position: absolute;
+  top:-30px;
+  left:100px;
+  width: 55%;
+  min-height: 350px;
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: #303137;
+  
+}
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 988px) {
+  #container1 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+  
+  }
+  .right {
+   
+  }
+}
+
+#left-1{
+    background: url("../images/Realistic.jpg")no-repeat center / cover;
+    background-position: top;
+}
+
+#left-2{
+  background: url("../images/Blog2.jpeg")
+    no-repeat center / cover;
+}
+
+#left-3{
+    background: url(../images/blog3.jpg)
+    no-repeat center / cover;
+}
+
+#left-4{
+    background: url(https://www.roxydisplayinc.com/image/mannequins/children/ita1-2-3-4-001b.jpg)
+    no-repeat center / cover;
+}
+
+#left-5{
+    background: url(../images/blog5.jpg)
+    no-repeat center / cover;
+}
+
+#left-6{
+  background: url(../images/Blogl.jpg)
+  no-repeat center / cover;
+}
+  
+@media (max-width:767px) { 
+  .ki{
+  padding-left: 0px;
+}
+     }

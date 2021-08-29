@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
+/*Contact Us............................*/
+/* Global Css */
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x:hidden; */
+}
+
+body {
+  width: 100%;
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+hr {
+  opacity :100%;
+  color: var(--primary);
+  height: 2px;
+}
+
+a{
+  text-decoration: none;
+  color:black
+}
+
+a:hover{
+  text-decoration: none;
+  color:black
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #dbe2ef;
+}
+
+::selection {
+  background: #dbe2ef;
+}
+
+/* Navbar */
+.navbar-nav li {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  margin: 0 10px;
+}
+/*Search Bar..........................*/
+.searchbar
+{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: left;
+  align-items: left;
+  background-color: rgba(255, 255, 255, 0);
+  height: 50px;
+}
+.search
+{
+  position: relative;
+  width: 60px;
+  height: 40px;
+  border-radius: 40px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 3px #3f72af;
+  overflow: hidden;
+}
+.search .icon_search
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+.search .icon_search::before
+{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #3f72af ;
+  border-radius: 50%;
+  transform: translate(-4px,-4px);
+}
+.search .icon_search::after
+{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #3f72af ;
+  transform: translate(6px,6px) rotate(315deg);
+}
+
+.search.active_search
+{
+  width: 360px;
+}
+
+@media(max-width:546px){
+  .search.active_search
+  {
+    width: 270px;
+  }
+  
+}
+
+.search .input_search
+{
+  position: relative;
+  width: 300px;
+  height: 40px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .input_search input
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size:16px ;
+  padding: 10px 0;
+}
+.clear
+{
+  position: absolute;
+  transform: translate(-50%);
+  width: 8px;
+  height: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.clear::before
+{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(45deg);
+}
+.clear::after
+{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(315deg);
+}
+
+/*Search Bar..........................*/
+
+/*Contact Us..........................*/
+
+.ContactUsMain
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contact_us
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ color:black;
+    background-size: cover;
+}
+.contact_us::before{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  content: "";
+  z-index: -1;
+  opacity: 0.2;
+  background: url('../images/Types.jpg');
+    background-size: cover;
+}
+.contact_us .content_m
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact_us .content_m h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #3f72af;
+}
+.contact_us .content_m p
+{
+    font-weight: 300;
+    color: #112d4e;
+}
+.container1
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1 .contact_info
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contact_info .box
+{
+    position: relative;
+    padding: 0.5rem 0;
+    display: flex;
+}
+.container1 .contact_info .box .icon
+{
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  position: relative;
+}
+.container1 .contact_info .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: rgb(73, 73, 73);
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contact_info .box .text h3
+{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(64, 59, 90) ;
+}
+.contact_form
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contact_form h2
+{
+    font-size: 1.3rem;
+    color: #3f72af;
+}
+.contact_form .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact_form .inputBox input,
+.contact_form .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  margin: 0.1rem 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  resize: none;
+}
+
+.contact_form .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 0px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact_form .inputBox input:focus ~ span,
+.contact_form .inputBox input:valid ~ span,
+.contact_form .inputBox textarea:valid ~ span,
+.contact_form .inputBox textarea:focus ~ span
+{
+  color: #e91363;
+  font-size: 1rem;
+  transform: translateY(-20px);
+}
+.contact_form .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #dbe2ef;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media (max-width: 991px)
+{
+  .contact_us
+  {
+    padding: 50px;
+  }
+  .container1
+  {
+    flex-direction: column;
+  }
+  .container1 .contact_info
+  {
+    margin-bottom: 40px;
+  }
+  .container1 .contact_info,
+  .contact_form
+  {
+    width: 100%;
+  }
+  .box{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*Contact Us...................................*/
+
+/* Maps */
+#maps{
+  background:rgba(0, 0, 0, 0.8);
+  
+}
+
+/*FAQ..........................*/
+.container_faq
+{
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.container_faq h1
+{
+  color: #3f72af;
+  font-size: 36px;
+}
+.container_faq h2::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* right: 12px; */
+  text-align: center;
+  width: 67px;
+  height: 2px;
+  background-color: #3f72af ;
+}
+
+.accordion
+{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dbe2ef;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+}
+.accordion .icon
+{
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/images/down-arrow.png) no-repeat 8px 7px #4890e7;
+  border-radius: 50%;
+  float: left;
+  transition: all .5s ease-in;
+}
+.accordion h6
+{
+  /* font-size: 22px; */
+  margin: 0;
+  padding: 5px 0 0 0;
+  font-weight: normal;
+  color: #112d4e;
+}
+
+.panel
+{
+  padding: 0 15px;
+  margin:5px;
+  border-left: 1px solid #3f72af;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-in;
+}
+
+.actives .icon
+{
+  background: url(/assets/images/increase.png) no-repeat 8px -25px #fff;
+}
+.actives
+{
+  background-color: #3f72af;
+  color: aliceblue;
+}
+.actives h5
+{
+  color: #f9f7f7;
+}
+
+/*FAQ..........................*/
+/*Walking footer..........................*/
+@keyframes walkanim {
+  to { background-position: 100% 0; }
+}
+@keyframes stroll {
+  from { transform: translateX(-200%); }
+  to { transform: translateX(100%); }
+}
+#walk-container {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	padding-bottom: 25%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+  animation: stroll 30s linear infinite;
+}
+#walk {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/walk-sequence.svg);
+  background-repeat: no-repeat;
+  background-size: 800%;
+  animation: walkanim 1s infinite steps(7);
+}
+/*Walking footer..........................*/
+  
+@media (max-width:767px) { 
+  .ki{
+  padding-left: 0px;
+}
+     }
+  
+@media (max-width:768px) { 
+ 
+#maps{
+  padding-top: 50px;
+}
+     }
